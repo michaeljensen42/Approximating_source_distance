@@ -45,7 +45,7 @@ load(['brains' filesep pt '_brain.mat'],'locs', 'lbls');
 
     clear crp* elec_descriptions bmat bvol CAR ch cortex* x y z V* stats t t_win theta k _opt phi
 
-[source_position, k_opt, theta, phi] = estimate_voltage_source_v3(sig_chanLocs, sig_mean_al_p);
+[source_position, k_opt, theta, phi] = estimate_voltage_source_gd(sig_chanLocs, sig_mean_al_p);
 
 locs_tmp = sig_chanLocs;
 lbls_tmp = sig_chanNames;
